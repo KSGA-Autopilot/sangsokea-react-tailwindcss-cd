@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sangsokea-react-tailwindcss-svc
+spec:
+  selector:
+    app: sangsokea-react-tailwindcss
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
