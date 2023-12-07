@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sangsokea-react-tailwindcss-deployment
+  labels:
+    app: sangsokea-react-tailwindcss
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sangsokea-react-tailwindcss
+  template:
+    metadata:
+      labels:
+        app: sangsokea-react-tailwindcss
+    spec:
+      containers:
+        - name: sangsokea-react-tailwindcss
+          image: kshrdautopilot/sangsokea-react-tailwindcss
+          ports:
+            - containerPort: 3000
