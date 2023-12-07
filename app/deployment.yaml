@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: sangsokea-react-tailwindcss
-          image: kshrdautopilot/sangsokea-react-tailwindcss
+          image: kshrdautopilot/sangsokea-react-tailwindcss:2023-12-07-09-28-09
           ports:
             - containerPort: 3000
